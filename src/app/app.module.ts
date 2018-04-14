@@ -11,6 +11,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { ListaDeseosService } from './services/lista-deseos.service';
+
+
 import { PendientesComponent } from './../pages/pendientes/pendientes.component';
 import { TerminadosComponent } from './../pages/terminados/terminados.component';
 
@@ -41,6 +44,7 @@ import { TerminadosComponent } from './../pages/terminados/terminados.component'
   providers: [
     StatusBar,
     SplashScreen,
+    ListaDeseosService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
